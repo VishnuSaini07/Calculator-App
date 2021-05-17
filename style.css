@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(244,178,104,255), rgba(235,49,116,255));
+  height: 100vh;
+}
+
+.phone {
+  width: 280px;
+  height: 550px;
+  background: #f5f4f4;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: -5px 7px 7px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+
+.layer1 {
+  width: 280px;
+  height: 550px;
+  border: 7px solid #E2E4E3;
+  border-radius: 30px;
+}
+
+.layer2 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 270px;
+  height: 540px;
+  border: 12px solid #fff;
+  border-radius: 30px;
+}
+
+.layer2::before{
+  content: '';
+  width: 150px;
+  height: 30px;
+  position: relative;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0px 0.5px 0.6px rgba(0, 0, 0, 0.1);
+}
+
+.layer2 .line1 {
+  width: 50px;
+  height: 5px;
+  background: #E2E4E3;
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.layer2 .line1::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  display: inline;
+  position: absolute;
+  background: #E2E4E3;
+  top: -1px;
+  left: 60px;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  width: 25px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  left: -4.75%;
+  top: 15%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.volume-button-plus {
+  width: 40px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  left: -7.5%;
+  top: 27%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.volume-button-minus {
+  width: 40px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  left: -7.5%;
+  top: 37%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.power-button {
+  width: 70px;
+  height: 3px;
+  background: #E2E4E3;
+  position: absolute;
+  right: -13%;
+  top: 30%;
+  border-radius: 7px;
+  transform: rotate(90deg);
+}
+
+.container {
+  width: 235px;
+  padding: 5px;
+  margin-top: 35px;
+  background: #f5f4f4;
+}
+
+.container input[type="text"] {
+  width: 100%;
+  height: 100px;
+  margin: 0 3px;
+  outline: none;
+  border: none;
+  color: rgba(235,49,116,255);
+  text-align: right;
+  font-size: 40px;
+  font-weight: 800;
+  padding-right: 10px;
+  background: #f5f4f4;
+}
+
+.container input[type="button"] {
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  width: calc(100% / 4 - 5px);
+  background: #eeeeee;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-right: 2px;
+  outline: none;
+  border: none;
+  color: rgba(235,49,116,255);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow:  4px 3px 2px #dddddd,
+  -3px -3px 6px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.container input.zero {
+  width: 108px;
+  height: 51px;
+}
+
+.container input.total {
+  position: absolute;
+  bottom: 20px;
+  height: 115px;
+  width: 45px;
+  right: 15px;
+  background: rgba(235,49,116,255);
+  color: #fff;
+}
+
+.container input[type="button"]:hover {
+  background: rgba(235,49,116,255);
+  color: #fff;
+}
