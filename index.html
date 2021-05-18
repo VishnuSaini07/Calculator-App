@@ -4,55 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator App | Neomorphism UI Design</title>
+  <title>Todo App</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 <body>
-
-  <div class="phone">
-    <div class="layer1">
-      <div class="button"></div>
-      <div class="volume-button-plus"></div>
-      <div class="volume-button-minus"></div>
-      <div class="power-button"></div>
+  <div class="wrapper">
+    <header>Todo App</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
     </div>
-    <div class="layer2">
-      <div class="line1"></div>
-      <div class="container">
-        <form action="#" name="forms">
-          <input type="text" name="answer">
-          <div class="buttons">
-            <input type="button" value="C" onclick="forms.answer.value = ''">
-            <input type="button" value="%" onclick="forms.answer.value += '%'">
-            <input type="button" value="/" onclick="forms.answer.value += '/'">
-            <input type="button" value="*" onclick="forms.answer.value += '*'">
-          </div>
-          <div class="buttons">
-            <input type="button" value="7" onclick="forms.answer.value += '7'">
-            <input type="button" value="8" onclick="forms.answer.value += '8'">
-            <input type="button" value="9" onclick="forms.answer.value += '9'">
-            <input type="button" value="+" onclick="forms.answer.value += '+'">
-          </div>
-          <div class="buttons">
-            <input type="button" value="4" onclick="forms.answer.value += '4'">
-            <input type="button" value="5" onclick="forms.answer.value += '5'">
-            <input type="button" value="6" onclick="forms.answer.value += '6'">
-            <input type="button" value="-" onclick="forms.answer.value += '-'">
-          </div>
-          <div class="buttons">
-            <input type="button" value="1" onclick="forms.answer.value += '1'">
-            <input type="button" value="2" onclick="forms.answer.value += '2'">
-            <input type="button" value="3" onclick="forms.answer.value += '3'">
-          </div>
-          <div class="buttons">
-            <input type="button" value="0" class="zero" onclick="forms.answer.value += '0'">
-            <input type="button" value="." onclick="forms.answer.value += '.'">
-            <input type="button" value="=" class="total"  onclick="forms.answer.value = eval(forms.answer.value)">
-          </div>
-        </form>
-      </div>
+    <ul class="todoList">
+      <!-- <li>Buy a new gaming laptop <span><i class="fas fa-trash"></i></span></li>
+      <li>Complete a previous task <span><i class="fas fa-trash"></i></span></li>
+      <li>Create a video for youtube <span><i class="fas fa-trash"></i></span></li>
+      <li>Create a new portfolio site <span><i class="fas fa-trash"></i></span></li> -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingNumb"></span> pending tasks</span>
+      <button>Clear All</button>
     </div>
   </div>
+
+  <p>Made with <i class="fas fa-heart"></i> by Vishnu Saini</p>
+
+  <script src="script.js"></script>
   
 </body>
 </html>
